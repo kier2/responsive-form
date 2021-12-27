@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Custom Form</title>
+</head>
+<body>
+    <main class="form-wrapper">
+        <h1>Get in Touch</h1>
+        <br>
+        <form>
+            <div class="col col-2">
+                <div class="input-group">
+                    <label for="fname">
+                        <span>First Name</span>
+                        <input class="input" type="text" id="fname">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="lname">
+                        <span>Last Name</span>
+                        <input class="input" type="text" id="lname">
+                    </label>
+                </div>
+            </div>
+            <div class="col col-2">
+                <div class="input-group">
+                    <label for="email">
+                        <span>Email Address</span>
+                        <input class="input" type="text" id="email">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="webname">
+                        <span>Website Name</span>
+                        <input class="input" type="text" id="webname">
+                    </label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="msg">
+                    <span>Write a message</span>
+                    <textarea class="input" name="" id="msg"></textarea>
+                </label>
+            </div>
+
+            <button class="send-btn">Send Info</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

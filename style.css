@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/building.jpg) no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(14, 50, 116, 0.424);
+    z-index: 2;
+}
+main{
+    position:relative;
+    z-index: 3;
+}
+.form-wrapper{
+    background: rgba(14, 50, 116, 0.8);
+    width: 70%;
+    min-width: 50%;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.form-wrapper h1{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.col{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+.col-2{
+    grid-template-columns: repeat(2,1fr);
+}
+.input-group > label{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid #cac7c7;
+    transition: ease 300ms;
+}
+.input-group label span{
+letter-spacing: 0.03em;
+   transition: ease 300ms;
+   position: absolute;
+   top: 0;
+   font-size: .8rem;
+}
+
+.input-group label input,
+.input-group label textarea {
+   background: none;
+   width: 100%;
+   box-shadow: none;
+   border: none;
+   padding-bottom: .6rem;
+   outline: none;
+   color:#fff;
+   opacity: .8;
+   font-weight: 600;
+   letter-spacing: 0.03em;
+}
+.input-group.active label{
+    border-color: #E3BC66;
+}
+.input-group.active label span {
+    font-size: .6rem;
+    color: #E3BC66;
+    top: -1.2rem;
+    font-weight: 300;
+}
+
+.send-btn{
+    padding: .8rem 2rem;
+    margin-top:2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.781);
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    background: rgba(255, 255, 255, 0.219);
+    color: #fff;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+.send-btn:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #E3BC66;
+}
+@media(max-width:700px){
+    .col-2{
+        grid-template-columns: 1fr;
+    }
+    .send-btn{
+        display: block;
+        width: 100%;
+    }
+}
